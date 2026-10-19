@@ -2,12 +2,12 @@ schemaVersion: 2.2.0
 metadata:
   name: devspace-camel-quickstart
 projects:
-  # - name: devfile-camel-quarkus
-  #   git:
-  #     remotes: 
-  #       origin: https://github.com/finhennessy/devfile-camel-quarkus.git
-  #     checkoutFrom:
-  #       revision: main
+  - name: devfile-camel-quarkus
+    git:
+      remotes: 
+        origin: https://github.com/finhennessy/devfile-camel-quarkus.git
+      checkoutFrom:
+        revision: main
   - name: camel-examples
     git:
       remotes: 

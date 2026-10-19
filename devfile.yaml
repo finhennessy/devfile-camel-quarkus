@@ -2,6 +2,12 @@ schemaVersion: 2.2.0
 metadata:
   name: devspace-camel-quickstart
 projects:
+  # - name: devfile-camel-quarkus
+  #   git:
+  #     remotes: 
+  #       origin: https://github.com/finhennessy/devfile-camel-quarkus.git
+  #     checkoutFrom:
+  #       revision: main
   - name: camel-examples
     git:
       remotes: 
@@ -53,7 +59,7 @@ commands:
         source ~/.bashrc
         echo "Attempting Camel CLI installation..."
 
-        # curl -fsSL https://camel.apache.org/install.sh | sh
+        jbang trust add https://github.com/redhat-camel
         jbang app install camel@redhat-camel/jbang-catalog/4.18.x
 
         # Exit 0 to ensure DevSpaces provisioning completes

@@ -38,6 +38,10 @@ components:
           name: 8080-tcp
           protocol: http
           targetPort: 8080
+        - name: jolokia
+          targetPort: 7878 # Change to 8778 if using the default agent port
+          exposure: public
+          protocol: http          
       volumeMounts:
         - name: m2
           path: /home/user/.m2

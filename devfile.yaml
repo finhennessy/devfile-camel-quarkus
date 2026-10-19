@@ -13,6 +13,7 @@ components:
     container:    
       image: quay.io/devfile/universal-developer-image:ubi9-latest
       memoryLimit: 3Gi
+      mountSources: true
       env:
         - name: JAVA_HOME_TEST
           value: /home/tooling/.sdkman/candidates/java/17.0.3-tem

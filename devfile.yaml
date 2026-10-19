@@ -72,5 +72,5 @@ commands:
         curl -fsSL https://camel.apache.org/install.sh | sh
 
           # 2. Exit 0 to ensure DevSpaces provisioning completes
-          exit 0
-        fi
+        exit 0
+        # fi

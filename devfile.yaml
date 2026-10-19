@@ -8,6 +8,12 @@ projects:
         origin: https://github.com/apache/camel-examples.git
       checkoutFrom:
         revision: main
+  - name: camel-quarkus-examples
+    git:
+      remotes:
+        origin: https://github.com/apache/camel-quarkus-examples.git
+      checkoutFrom:
+        revision: main
 components:
   - name: tools
     container:    
@@ -47,7 +53,8 @@ commands:
         source ~/.bashrc
         echo "Attempting Camel CLI installation..."
 
-        curl -fsSL https://camel.apache.org/install.sh | sh
+        # curl -fsSL https://camel.apache.org/install.sh | sh
+        jbang app install camel@redhat-camel/jbang-catalog/4.18.x
 
         # Exit 0 to ensure DevSpaces provisioning completes
         exit 0

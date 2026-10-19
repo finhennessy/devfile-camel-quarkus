@@ -1,6 +1,13 @@
 schemaVersion: 2.2.0
 metadata:
   name: devspace-camel-quickstart
+projects:
+  - name: camel-examples
+    git:
+      remotes: 
+        origin: https://github.com/apache/camel-examples.git
+      checkoutFrom:
+        revision: main
 components:
   - name: tools
     container:    
